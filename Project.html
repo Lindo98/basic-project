@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Fit</title>
+  </head>
+  <style>
+    body {
+      background: linear-gradient(
+        68.6deg,
+        rgb(252, 165, 241) 1.8%,
+        rgb(181, 255, 255) 100.5%
+      );
+      margin: 15px;
+    }
+
+    h1 {
+      color: #f12886;
+      text-align: center;
+      font-size: 38px;
+      margin: 0;
+      line-height: 48px;
+    }
+
+    h2 {
+      text-align: center;
+      line-height: 30px;
+      border-width: 10px;
+      border-color: blue;
+      text-decoration: line-through;
+      font-size: 20px;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+    }
+
+    h3 {
+      text-align: center;
+      margin: 0 auto;
+      text-decoration: underline;
+      font-size: 30px;
+      font-weight: 130;
+    }
+
+    .column {
+      display: flex;
+      align-content: center;
+      margin: 20px;
+    }
+    p {
+      text-align: left;
+      display: block;
+      text-decoration: none;
+      text-decoration-color: #5a5a5a;
+      font-size: 16px;
+    }
+
+    button {
+      background: #f12886;
+      margin: 0 auto 30px auto;
+      padding: 15px;
+      display: block;
+      font-size: 14px;
+      color: white;
+      border: 2px solid #f12886;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      transition: all 150ms ease-in-out;
+    }
+
+    button:hover {
+      color: #f12886;
+      background: white;
+      cursor: pointer;
+    }
+
+    hr {
+      border: none;
+      height: 2px;
+      background: #d6b7b7;
+    }
+
+    .contact-details {
+      text-align: center;
+      font-size: 12px;
+      opacity: 0.9;
+      font-family: monospace;
+    }
+  </style>
+  <body>
+    <h1>New Pilate Classes</h1>
+    <h2>Sweating at the gym is outdated! 🏃‍♀️</h2>
+
+    <div class="column">
+      <img
+        src="https://www.beyondfitnesshealth.com.au/wp-content/uploads/services-hero-pilates-yoga.jpg"
+        width="100%"
+        alt=""
+      />
+    </div>
+    <br />
+    <hr />
+    <br />
+    <h3>All about Pilates</h3>
+    <br />
+    <p>
+      Pilates can improve muscle tone, flexibility and strength, as well as help
+      you heal from injuries. If you’ve been looking for a new workout routine
+      that can give you a good balance of flexibility, strength, muscle tone and
+      help for a few aches and pains, Pilates may be the answer. It might look a
+      bit intimidating at first, but it’s much easier to get into — and,
+      depending on what you do, less expensive — than you might assume. While
+      Pilates has been around for nearly 100 years, it continues gaining
+      traction, picking up new devotees all the time. Part of the reason it’s
+      become such a popular mode of exercise is that it’s customizable to fit
+      you and your health goals, regardless of your age, sex, health status and
+      fitness level.
+    </p>
+    <p>
+      <strong>For more information read on </strong>
+      <a href="https://en.wikipedia.org/wiki/Pilates">wikipedia</a>
+    </p>
+
+    <button>Sign Up for a free trial</button>
+    <script>
+      function sign() {
+        let name = prompt("What is your name?");
+        let age = prompt("how old are you");
+
+        if ((age) => 10) {
+          alert("Good news " + name + " You qualify for a trial");
+        } else {
+          alert("Sorry " + name + " you need to be 10 years or older");
+        }
+      }
+      let signButton = document.querySelector("button");
+      signButton.addEventListener("click", sign);
+    </script>
+  </body>
+  <hr />
+  <div class="contact-details">
+    <span class="contact-platform">This page was coded by</span>
+    <a
+      href="https://www.linkedin.com/in/lindokuhle-mtengwane/
+"
+      >Lindokuhle Mtengwane</a
+    >
+  </div>
+</html>
